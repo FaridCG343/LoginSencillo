@@ -11,7 +11,7 @@ class MiLogin extends StatelessWidget {
       title: 'AppMaster Castillo',
       theme: ThemeData(
         brightness: Brightness.light,
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.redAccent,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       darkTheme: ThemeData(
