@@ -82,9 +82,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                 SizedBox(height: 16.0),
               ],
             ),
-
             if (!acceso)
-              {
                 Column(
                   children: <Widget>[
                     TextField(
@@ -131,26 +129,24 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                   ], //fin de widget[]
                 ), //fin de columna
                 //if verdadero
-              }
             else
-              {
-                Center(
-                  child: Column(
-                    children: <Widget>[
-                      Text('YAY, Estoy ingresando!'),
-                      RaisedButton(
-                        elevation: 20.0,
-                        child: Text('Cerrar sesión'),
-                        onPressed: () {
-                          setState(() {
-                            acceso = false;
-                          });
-                        },
-                      ),
-                    ], //fin de widget[]
-                  ), //fin de  column
-                ), //fin de center
-              } //else
+              Center(
+                child: Column(
+                  children: <Widget>[
+                    Text('YAY, Estoy ingresando!'),
+                    RaisedButton(
+                      elevation: 20.0,
+                      child: Text('Cerrar sesión'),
+                      onPressed: () {
+                        setState(() {
+                          acceso = false;
+                        });
+                      },
+                    ),
+                  ], //fin de widget[]
+                ), //fin de  column
+              ), //fin de center
+              //else
           ], //fin de widget[]
         ), //fin de list view
       ), //era segura
