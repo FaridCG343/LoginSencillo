@@ -129,7 +129,15 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                   ),//fin de padding
                 ],  //fin de widget[]
               ),
-            
+            else 
+            child:FlatButton(
+              child: Text('Cancelar'),
+              onPressed: () {
+                setState(() {
+                  acceso = false;
+                });
+              },
+            ),//fin flat button
           ], //fin de widget[]
         ), //fin de list view
       ), //era segura
