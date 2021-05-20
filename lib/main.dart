@@ -82,53 +82,53 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                 SizedBox(height: 16.0),
               ],
             ),
-            if (!acceso)
-                Column(
-                  children: <Widget>[
-                    TextField(
-                      decoration: InputDecoration(
-                        filled: true,
-                        // fillColor: Colors.amber,
-                        labelText: 'Username',
-                      ),
+            if(!acceso)
+              Column(
+                children: <Widget>[
+                  TextField(
+                    decoration: InputDecoration(
+                      filled: true,
+                      // fillColor: Colors.amber,
+                      labelText: 'Username',
                     ),
-                    SizedBox(height: 12.0),
-                    TextField(
-                      decoration: InputDecoration(
-                        filled: true,
-                        labelText: 'Password',
-                      ),
-                      obscureText: true,
+                  ),
+                  SizedBox(height: 12.0),
+                  TextField(
+                    decoration: InputDecoration(
+                      filled: true,
+                      labelText: 'Password',
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 18.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          FlatButton(
-                            child: Text('Cancelar'),
-                            onPressed: () {
-                              setState(() {
-                                acceso = false;
-                              });
-                            },
-                          ), //fin flat button
-                          RaisedButton(
-                            child: Text(
-                              'Siguiente',
-                            ),
-                            onPressed: () {
-                              setState(() {
-                                acceso = true;
-                              });
-                            },
-                          ), //fin raised button
-                        ], //fin widget[]
-                      ), //fin de row
-                    ), //fin de padding
-                  ], //fin de widget[]
-                ), //fin de columna
-                //if verdadero
+                    obscureText: true,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 18.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        FlatButton(
+                          child: Text('Cancelar'),
+                          onPressed: () {
+                            setState(() {
+                              acceso = false;
+                            });
+                          },
+                        ), //fin flat button
+                        RaisedButton(
+                          child: Text(
+                            'Siguiente',
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              acceso = true;
+                            });
+                          },
+                        ), //fin raised button
+                      ], //fin widget[]
+                    ), //fin de row
+                  ), //fin de padding
+                ], //fin de widget[]
+              ) //fin de columna
+              //if verdadero
             else
               Center(
                 child: Column(
