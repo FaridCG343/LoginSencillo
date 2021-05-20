@@ -110,7 +110,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                           child: Text('CANCEL'),
                           onPressed: () {
                             setState(() {
-                              isLogin = false;
+                              acceso = false;
                             });
                           },
                         ),//fin flat button
@@ -120,7 +120,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                           ),
                           onPressed: () {
                             setState(() {
-                              isLogin = true;
+                              acceso = true;
                             });
                           },
                         ),//fin raised button
