@@ -84,70 +84,73 @@ class _IngresoSistemaState extends State<IngresoSistema> {
             ),
 
             if (!acceso)
-              Column(
-                children: <Widget>[
-                  TextField(
-                    decoration: InputDecoration(
-                      filled: true,
-                      // fillColor: Colors.amber,
-                      labelText: 'Username',
+              {
+                Column(
+                  children: <Widget>[
+                    TextField(
+                      decoration: InputDecoration(
+                        filled: true,
+                        // fillColor: Colors.amber,
+                        labelText: 'Username',
+                      ),
                     ),
-                  ),
-                  SizedBox(height: 12.0),
-                  TextField(
-                    decoration: InputDecoration(
-                      filled: true,
-                      labelText: 'Password',
+                    SizedBox(height: 12.0),
+                    TextField(
+                      decoration: InputDecoration(
+                        filled: true,
+                        labelText: 'Password',
+                      ),
+                      obscureText: true,
                     ),
-                    obscureText: true,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 18.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: <Widget>[
-                        FlatButton(
-                          child: Text('Cancelar'),
-                          onPressed: () {
-                            setState(() {
-                              acceso = false;
-                            });
-                          },
-                        ),//fin flat button
-                        RaisedButton(
-                          child: Text(
-                            'Siguiente',
-                          ),
-                          onPressed: () {
-                            setState(() {
-                              acceso = true;
-                            });
-                          },
-                        ),//fin raised button
-                      ],//fin widget[]
-                    ),//fin de row
-                  ),//fin de padding
-                ],  //fin de widget[]
-              ),//fin de columna
-              //if verdadero
-             else
-            Center(
-              child: Column(
-                children: <Widget>[
-                  Text('YAY, Estoy ingresando!'),
-                  RaisedButton(
-                    elevation: 20.0,
-                    child: Text('Cerrar sesión'),
-                    onPressed: () {
-                      setState(() {
-                        acceso = false;
-                      });
-                    },
-                  ),
-                ],//fin de widget[]
-              ),//fin de  column
-            ),//fin de center
-            //else
+                    Padding(
+                      padding: const EdgeInsets.only(top: 18.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          FlatButton(
+                            child: Text('Cancelar'),
+                            onPressed: () {
+                              setState(() {
+                                acceso = false;
+                              });
+                            },
+                          ), //fin flat button
+                          RaisedButton(
+                            child: Text(
+                              'Siguiente',
+                            ),
+                            onPressed: () {
+                              setState(() {
+                                acceso = true;
+                              });
+                            },
+                          ), //fin raised button
+                        ], //fin widget[]
+                      ), //fin de row
+                    ), //fin de padding
+                  ], //fin de widget[]
+                ), //fin de columna
+                //if verdadero
+              }
+            else
+              {
+                Center(
+                  child: Column(
+                    children: <Widget>[
+                      Text('YAY, Estoy ingresando!'),
+                      RaisedButton(
+                        elevation: 20.0,
+                        child: Text('Cerrar sesión'),
+                        onPressed: () {
+                          setState(() {
+                            acceso = false;
+                          });
+                        },
+                      ),
+                    ], //fin de widget[]
+                  ), //fin de  column
+                ), //fin de center
+              } //else
           ], //fin de widget[]
         ), //fin de list view
       ), //era segura
