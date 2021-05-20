@@ -93,7 +93,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                       labelText: 'Username',
                     ),
                   ),
-                ]  //fin de widget[]
+                ],  //fin de widget[]
               ),
             }
           ], //fin de widget[]
