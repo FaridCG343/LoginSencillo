@@ -93,6 +93,14 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                       labelText: 'Username',
                     ),
                   ),
+                  SizedBox(height: 12.0),
+                  TextField(
+                    decoration: InputDecoration(
+                      filled: true,
+                      labelText: 'Password',
+                    ),
+                    obscureText: true,
+                  ),
                 ],  //fin de widget[]
               ),
             
