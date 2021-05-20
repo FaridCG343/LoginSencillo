@@ -128,7 +128,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                     ),//fin de row
                   ),//fin de padding
                 ],  //fin de widget[]
-              ),
+              ),//fin de columna
             else
             Center(
               child: Column(
@@ -139,7 +139,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                     child: Text('Cerrar sesión'),
                     onPressed: () {
                       setState(() {
-                        isLogin = false;
+                        acceso = false;
                       });
                     },
                   ),
