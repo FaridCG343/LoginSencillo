@@ -83,7 +83,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
               ],
             ),
 
-            if (!acceso){
+            if (!acceso)
               Column(
                 children: <Widget>[
                   TextField(
@@ -95,7 +95,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                   ),
                 ],  //fin de widget[]
               ),
-            }
+            
           ], //fin de widget[]
         ), //fin de list view
       ), //era segura
