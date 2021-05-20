@@ -129,6 +129,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                   ),//fin de padding
                 ],  //fin de widget[]
               ),//fin de columna
+              //if verdadero
             else
             Center(
               child: Column(
@@ -146,6 +147,7 @@ class _IngresoSistemaState extends State<IngresoSistema> {
                 ],//fin de widget[]
               ),//fin de  column
             ),//fin de center
+            //else
           ], //fin de widget[]
         ), //fin de list view
       ), //era segura
